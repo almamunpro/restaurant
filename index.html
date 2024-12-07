@@ -3,11 +3,181 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
   <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+    .header{
+      background-image: url(/image/bgimg.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    }
+    .poppins-light {
+      font-family: "Poppins", serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    .poppins-regular {
+      font-family: "Poppins", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .poppins-medium {
+      font-family: "Poppins", serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    .poppins-semibold {
+      font-family: "Poppins", serif;
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    .sansita-swashed {
+      font-family: "Sansita Swashed", system-ui;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: nomal;
+    }
+    .sansita-swashed-semibold {
+      font-family: "Sansita Swashed", system-ui;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: nomal;
+    }
+    .bg{
+      background-image: url(/image/bg-cart.png);
+    }
+    .active{
+      color: #E9BD8C;
+    }
+  </style>
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="m-auto">
+  <header class="header flex flex-col w-[1280] h-[813px]">
+    <nav class="flex items-center gap-20 text-lg poppins-semibold pt-5 ps-10">
+      <img src="/image/logo.png" alt="Logo" class="w-[87px] h-[99px] inline-block object-cover rounded-full">
+      <ul class="flex justify-around w-[417px] h-[15px] text-white">
+        <li><a class="active" href="#">Home</a></li>
+        <li><a class="" href="#">About</a></li>
+        <li><a class="" href="#">Contact Us</a></li>
+        <li><a class="" href="#">Services</a></li>
+      </ul>
+    </nav>
+    <div class="ms-12 mt-[80px]">
+      <p class="active poppins-medium text-2xl mt-4 ">
+        Delicious Cafe
+      </p>
+      <p class="w-[424px] h-[148px] text-[74px] sansita-swashed text-white">
+        Sweet Treats, Perfect Eats
+      </p>
+    </div>
+    <div class="mt-[150px] ms-12">
+      <a href="#" class="py-3 px-6 rounded-[8px] poppins-medium text-white bg-[#933C24]">
+        Shop Now
+      </a>
+      <a href="#" class="py-3 px-6 rounded-[8px] poppins-medium active">
+        Learn More
+      </a>
+    </div>
+  </header>
+  <h1 class="sansita-swashed-semibold text-[64px] text-center">Top Products</h1>
+  <!-- Product items -->
+  <div class="mt-10 grid grid-rows-2 gap-8">
+    <!-- row 1 -->
+    <div class="grid grid-cols-3 gap-4 mx-16">
+      <div class="bg w-[360px] h-[411px]  mx-auto">
+        <img class="ms-24 w-[226px] h-[223px]" src="/image/Grain.png" alt="">
+          <div class="flex justify-around  mt-8 text-white ">
+            <p class="text-2xl w-40">$40</p>
+            <img src="/image/circle!.png" alt="">
+          </div>
+          <div class="flex justify-around items-center mt-4 text-white">
+            <h3 class="text-2xl w-40">Whole Grain Bread</h3>
+            <p class="px-4 py-2 rounded-lg poppins-light bg-[#933C24]">Add</p>
+          </div>
+        </div>
+      
+      <!-- more -->
+      <div class="bg w-[360px] h-[411px]  mx-auto">
+        <img class="ms-24 w-[226px] h-[223px]" src="/image/Grain.png" alt="">
+          <div class="flex justify-around  mt-8 text-white ">
+            <p class="text-2xl w-40">$40</p>
+            <img src="/image/circle!.png" alt="">
+          </div>
+          <div class="flex justify-around items-center mt-4 text-white">
+            <h3 class="text-2xl w-40">Whole Grain Bread</h3>
+            <p class="px-4 py-2 rounded-lg poppins-light bg-[#933C24]">Add</p>
+          </div>
+        </div>
+      
+      <!-- more -->
+      <div class="bg w-[360px] h-[411px]  mx-auto">
+        <img class="ms-24 w-[226px] h-[223px]" src="/image/Grain.png" alt="">
+          <div class="flex justify-around  mt-8 text-white ">
+            <p class="text-2xl w-40">$40</p>
+            <img src="/image/circle!.png" alt="">
+          </div>
+          <div class="flex justify-around items-center mt-4 text-white">
+            <h3 class="text-2xl w-40">Whole Grain Bread</h3>
+            <p class="px-4 py-2 rounded-lg poppins-light bg-[#933C24]">Add</p>
+          </div>
+        </div>
+    
+    </div>
+    
+    <!-- row 2 -->
+    <div class="grid grid-cols-3 gap-4 mx-16">
+      <div class="bg w-[360px] h-[411px]  mx-auto">
+        <img class="ms-24 w-[226px] h-[223px]" src="/image/Grain.png" alt="">
+          <div class="flex justify-around  mt-8 text-white ">
+            <p class="text-2xl w-40">$40</p>
+            <img src="/image/circle!.png" alt="">
+          </div>
+          <div class="flex justify-around items-center mt-4 text-white">
+            <h3 class="text-2xl w-40">Whole Grain Bread</h3>
+            <p class="px-4 py-2 rounded-lg poppins-light bg-[#933C24]">Add</p>
+          </div>
+        </div>
+      
+      <!-- more -->
+      <div class="bg w-[360px] h-[411px]  mx-auto">
+        <img class="ms-24 w-[226px] h-[223px]" src="/image/Grain.png" alt="">
+          <div class="flex justify-around  mt-8 text-white ">
+            <p class="text-2xl w-40">$40</p>
+            <img src="/image/circle!.png" alt="">
+          </div>
+          <div class="flex justify-around items-center mt-4 text-white">
+            <h3 class="text-2xl w-40">Whole Grain Bread</h3>
+            <p class="px-4 py-2 rounded-lg poppins-light bg-[#933C24]">Add</p>
+          </div>
+        </div>
+      
+      <!-- more -->
+      <div class="bg w-[360px] h-[411px]  mx-auto">
+        <img class="ms-24 w-[226px] h-[223px]" src="/image/Grain.png" alt="">
+          <div class="flex justify-around  mt-8 text-white ">
+            <p class="text-2xl w-40">$40</p>
+            <img src="/image/circle!.png" alt="">
+          </div>
+          <div class="flex justify-around items-center mt-4 text-white">
+            <h3 class="text-2xl w-40">Whole Grain Bread</h3>
+            <p class="px-4 py-2 rounded-lg poppins-light bg-[#933C24]">Add</p>
+          </div>
+        </div>
+    
+    </div>
+  </div>
 </body>
 </html>
